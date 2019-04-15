@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leemartinc.zodiacadventures.MainActivity">
+
+    <TextView
+        android:id="@+id/viewFinder"
+        android:layout_width="369dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/view_finder"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="No Content -- Try reloading"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="No Content" />
+
+    <ImageButton
+        android:id="@+id/btnright"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="64dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rt_arrow" />
+
+    <ImageButton
+        android:id="@+id/btndown"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnup"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/dn_arrow" />
+
+    <ImageButton
+        android:id="@+id/btnup"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="120dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/up_arrow" />
+
+    <ImageButton
+        android:id="@+id/btnleft"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="64dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lt_arrow"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="179dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="206dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFinder"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/playerAlias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name the Class"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="402dp" />
+
+        <TextView
+            android:id="@+id/player_armor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Armor: 00"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="432dp" />
+
+        <TextView
+            android:id="@+id/player_health"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Health: 00"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="413dp" />
+
+        <TextView
+            android:id="@+id/player_power"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="112dp"
+            android:text=" power: 00"
+            app:layout_constraintBottom_toTopOf="@+id/btnleft"
+            tools:layout_editor_absoluteX="186dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="157dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFinder"
+        app:layout_constraintVertical_bias="0.825">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKILLZ"
+            android:textAlignment="textEnd"
+            tools:layout_editor_absoluteX="347dp"
+            tools:layout_editor_absoluteY="432dp" />
+
+        <TextView
+            android:id="@+id/skill1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skill 1 max dmg: 00"
+            android:textAlignment="textEnd"
+            tools:layout_editor_absoluteX="269dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <TextView
+            android:id="@+id/skill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skill 2 max dmg: 00"
+            android:textAlignment="textEnd"
+            tools:layout_editor_absoluteX="269dp"
+            tools:layout_editor_absoluteY="451dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFinder" />
+
+    <LinearLayout
+        android:layout_width="237dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/mon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monster name"
+            android:textAlignment="center"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/mon_health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="monster health"
+            android:textAlignment="center"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="147dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="148dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/skill_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SKL 1"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/skill_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SKL 2"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
